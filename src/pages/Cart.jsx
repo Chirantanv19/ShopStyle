@@ -40,7 +40,7 @@ const Cart = () => {
                   
                   <div className="item-actions">
                     <p className="item-subtotal">
-                      ${(item.discountPrice * item.quantity).toFixed(2)}
+                      {(item.discountPrice * item.quantity).toFixed(2)}
                     </p>
                     <button 
                       className="remove-item"
@@ -56,7 +56,7 @@ const Cart = () => {
             <div className="cart-summary">
               <div className="summary-row">
                 <span>Subtotal:</span>
-                <span>${totalPrice.toFixed(2)}</span>
+                <span>{totalPrice.toFixed(2)}</span>
               </div>
               <div className="summary-row">
                 <span>Shipping:</span>
@@ -64,7 +64,7 @@ const Cart = () => {
               </div>
               <div className="summary-total">
                 <span>Total:</span>
-                <span>${totalPrice.toFixed(2)}</span>
+                <span>{totalPrice.toFixed(2)}</span>
               </div>
               
               <button className="checkout-button">Proceed to Checkout</button>
