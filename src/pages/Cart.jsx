@@ -55,8 +55,8 @@ const Cart = () => {
             
             <div className="cart-summary">
               <div className="summary-row">
-                <span>Subtotal:</span>
-                <span>{totalPrice.toFixed(2)}</span>
+                <span>Rs Subtotal:</span>
+                <span>Rs {totalPrice.toFixed(2)}</span>
               </div>
               <div className="summary-row">
                 <span>Shipping:</span>
@@ -64,7 +64,7 @@ const Cart = () => {
               </div>
               <div className="summary-total">
                 <span>Total:</span>
-                <span>{totalPrice.toFixed(2)}</span>
+                <span>Rs {totalPrice.toFixed(2)}</span>
               </div>
               
               <button className="checkout-button">Proceed to Checkout</button>
